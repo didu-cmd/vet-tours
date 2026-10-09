@@ -1,0 +1,6 @@
+{
+  "name": "Vacation to Ethiopia Tours",
+  "description": "Bespoke guided travel, historical explorations, trekking, and cultural journeys across Ethiopia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
