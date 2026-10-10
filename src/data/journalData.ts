@@ -1,3 +1,5 @@
+import { IMAGES } from '../utils/imageAssets';
+
 export interface JournalArticle {
   id: string;
   slug: string;
@@ -27,7 +29,7 @@ export const JOURNAL_ARTICLES: JournalArticle[] = [
       name: 'Ephraim Mengistu',
       role: 'Senior Heritage Specialist, Vacation to Ethiopia Tours'
     },
-    image: '/src/assets/images/hero_ethiopia_lalibela_1791564320721.jpg',
+    image: IMAGES.lalibela,
     excerpt: 'Carved straight down into the pink volcanic rock of the Lasta mountains, Lalibela remains one of humankind’s most profound architectural and spiritual wonders.',
     content: [
       'When 12th-century King Lalibela envisioned creating a “New Jerusalem” high in the remote Lasta mountains of northern Ethiopia, his builders chose an architectural path unlike any other civilization. Rather than gathering timber and mortar to raise walls toward the sky, they carved downwards directly into solid red volcanic tuff, extracting millions of tons of stone to reveal complete subterranean sanctuaries.',
@@ -50,7 +52,7 @@ export const JOURNAL_ARTICLES: JournalArticle[] = [
       name: 'Yared Bekele',
       role: 'Highland Mountain Guide, Vacation to Ethiopia Tours'
     },
-    image: '/src/assets/images/tour_simien_mountains_1791564332514.jpg',
+    image: IMAGES.simien,
     excerpt: 'Standing on the cliff edge at Imet Gogo with clouds swirling 1,500 meters below, surrounded by golden-maned Gelada baboons grazing peacefully.',
     content: [
       'The Simien Mountains do not resemble any other alpine range in Africa. Formed forty million years ago by massive volcanic eruptions that deposited layers of basalt thousands of meters thick, millions of subsequent years of water erosion carved the plateau into sheer escarpments, deep amphitheaters, and razor-sharp pinnacles that plunge vertically into endless highland valleys.',
@@ -73,7 +75,7 @@ export const JOURNAL_ARTICLES: JournalArticle[] = [
       name: 'Dawit Tadesse',
       role: 'Expedition Leader, Afar Region'
     },
-    image: '/src/assets/images/tour_danakil_depression_1791564342740.jpg',
+    image: IMAGES.danakil,
     excerpt: 'A journey 125 meters below sea level into shimmering neon sulphur terraces, incandescent lava lakes, and ancient Afar camel salt caravans.',
     content: [
       'The Danakil Depression in northeastern Ethiopia challenges every conventional definition of what a terrestrial environment looks like. Located in the Afar Triangle—where the Nubian, Somalian, and Arabian tectonic plates are gradually pulling apart at a rate of 1 to 2 centimeters per year—this sunken basin is one of the lowest (-125m below sea level) and hottest inhabited places on Earth.',
@@ -96,7 +98,7 @@ export const JOURNAL_ARTICLES: JournalArticle[] = [
       name: 'Selamawit Girma',
       role: 'Cultural Travel Specialist, Addis Ababa'
     },
-    image: '/src/assets/images/destination_harar_jugol_1791564363559.jpg',
+    image: IMAGES.harar,
     excerpt: 'Coffee is not a hasty beverage in Ethiopia—it is a communal ritual of hospitality, peace, and unhurried human connection.',
     content: [
       'In Ethiopia, the global birthplace of Coffea Arabica, coffee is never consumed hurriedly from a paper cup on the way to an appointment. Here, the phrase "Buna Tetu" (literally "drink coffee") is a sacred invitation to friendship, reconciliation, and community that commands time, patience, and sensory devotion.',
@@ -119,7 +121,7 @@ export const JOURNAL_ARTICLES: JournalArticle[] = [
       name: 'Ephraim Mengistu',
       role: 'Senior Heritage Specialist, Vacation to Ethiopia Tours'
     },
-    image: '/src/assets/images/destination_lake_tana_1791564373066.jpg',
+    image: IMAGES.lakeTana,
     excerpt: 'Tens of thousands of white-robed worshippers, velvet ceremonial umbrellas, and the sacred baptismal waters of Fasilides’ Bath.',
     content: [
       'Every January on the 19th (or 20th in leap years), Ethiopia commemorates Timkat—the Feast of the Epiphany celebrating the baptism of Jesus in the River Jordan. While Timkat is celebrated with immense devotion across the country, nowhere is the spectacle more grand, cinematic, and historically resonant than in the 17th-century castle city of Gondar.',
@@ -142,7 +144,7 @@ export const JOURNAL_ARTICLES: JournalArticle[] = [
       name: 'Selamawit Girma',
       role: 'Cultural Travel Specialist, Addis Ababa'
     },
-    image: '/src/assets/images/destination_harar_jugol_1791564363559.jpg',
+    image: IMAGES.harar,
     excerpt: 'Labyrinthine cobblestone alleys painted cobalt and ochre, Adare living heritage, wild coffee terroir, and the legendary night hyena masters.',
     content: [
       'Perched at nearly 1,900 meters on the eastern Ethiopian plateau overlooking the Danakil desert, Harar Jugol is a cultural enclave unlike any other in East Africa. Founded between the 10th and 13th centuries, this fortified city served for centuries as an independent sultanate and the crossroads of trade between the Ethiopian highlands, the Red Sea ports, and the Arabian Peninsula.',
@@ -165,7 +167,7 @@ export const JOURNAL_ARTICLES: JournalArticle[] = [
       name: 'Dawit Tadesse',
       role: 'Expedition Leader & Cultural Anthropologist'
     },
-    image: '/src/assets/images/tour_omo_valley_1791564353175.jpg',
+    image: IMAGES.omo,
     excerpt: 'How to experience the ancestral traditions of the Hamar, Mursi, and Karo with dignity, ethical awareness, and genuine cross-cultural respect.',
     content: [
       'The Lower Valley of the Omo in southwestern Ethiopia is one of the most culturally diverse anthropological landscapes on the African continent. Here, along the meandering channels of the Omo River and the scrub savannahs of the Great Rift Valley, more than a dozen distinct indigenous ethnic groups have preserved pastoralist customs, intricate body ornamentation, and ceremonial rites for centuries.',

@@ -1,3 +1,5 @@
+import { IMAGES } from '../utils/imageAssets';
+
 export interface TourPackage {
   id: string;
   title: string;
@@ -44,11 +46,11 @@ export const TOURS_DATA: TourPackage[] = [
     samplePriceUSD: 1850,
     travelStyle: 'Historical & Cultural',
     difficulty: 'Moderate',
-    heroImage: '/src/assets/images/hero_ethiopia_lalibela_1791564320721.jpg',
+    heroImage: IMAGES.lalibela,
     gallery: [
-      '/src/assets/images/hero_ethiopia_lalibela_1791564320721.jpg',
-      '/src/assets/images/destination_lake_tana_1791564373066.jpg',
-      '/src/assets/images/tour_simien_mountains_1791564332514.jpg'
+      IMAGES.lalibela,
+      IMAGES.lakeTana,
+      IMAGES.simien
     ],
     summary: 'Journey across Ethiopia’s legendary northern historic route. Marvel at the monolith rock-hewn churches of Lalibela, explore the medieval castles of Gondar, cruise Lake Tana to ancient island monasteries, and uncover ancient Axum.',
     highlights: [
@@ -149,10 +151,10 @@ export const TOURS_DATA: TourPackage[] = [
     samplePriceUSD: 1420,
     travelStyle: 'Adventure & Trekking',
     difficulty: 'Strenuous',
-    heroImage: '/src/assets/images/tour_simien_mountains_1791564332514.jpg',
+    heroImage: IMAGES.simien,
     gallery: [
-      '/src/assets/images/tour_simien_mountains_1791564332514.jpg',
-      '/src/assets/images/hero_ethiopia_lalibela_1791564320721.jpg'
+      IMAGES.simien,
+      IMAGES.lalibela
     ],
     summary: 'Trek along dramatic cliffs soaring 1,500 meters above vast ravines. Encounter endemic wildlife including the gentle Gelada baboon, Walia ibex, and the rare Ethiopian wolf on this unforgettable alpine journey.',
     highlights: [
@@ -236,10 +238,10 @@ export const TOURS_DATA: TourPackage[] = [
     samplePriceUSD: 980,
     travelStyle: 'Adventure & Trekking',
     difficulty: 'Challenging',
-    heroImage: '/src/assets/images/tour_danakil_depression_1791564342740.jpg',
+    heroImage: IMAGES.danakil,
     gallery: [
-      '/src/assets/images/tour_danakil_depression_1791564342740.jpg',
-      '/src/assets/images/hero_ethiopia_lalibela_1791564320721.jpg'
+      IMAGES.danakil,
+      IMAGES.lalibela
     ],
     summary: 'Venture into one of the most extreme landscapes on Earth. Witness neon-colored hydrothermal springs at Dallol, vast blinding white salt flats at Lake Karum, and the bubbling caldera of Erta Ale volcano.',
     highlights: [
@@ -307,10 +309,10 @@ export const TOURS_DATA: TourPackage[] = [
     samplePriceUSD: 1650,
     travelStyle: 'Cultural Immersion',
     difficulty: 'Moderate',
-    heroImage: '/src/assets/images/tour_omo_valley_1791564353175.jpg',
+    heroImage: IMAGES.omo,
     gallery: [
-      '/src/assets/images/tour_omo_valley_1791564353175.jpg',
-      '/src/assets/images/destination_lake_tana_1791564373066.jpg'
+      IMAGES.omo,
+      IMAGES.lakeTana
     ],
     summary: 'An ethical and deeply respectful journey into southern Ethiopia. Meet the diverse indigenous communities of the Lower Omo Valley including the Hamar, Mursi, Karo, and Dorze, learning their living traditions.',
     highlights: [
@@ -400,10 +402,10 @@ export const TOURS_DATA: TourPackage[] = [
     samplePriceUSD: 890,
     travelStyle: 'Historical & Cultural',
     difficulty: 'Easy',
-    heroImage: '/src/assets/images/destination_harar_jugol_1791564363559.jpg',
+    heroImage: IMAGES.harar,
     gallery: [
-      '/src/assets/images/destination_harar_jugol_1791564363559.jpg',
-      '/src/assets/images/hero_ethiopia_lalibela_1791564320721.jpg'
+      IMAGES.harar,
+      IMAGES.lalibela
     ],
     summary: 'Step inside the UNESCO-listed 16th-century walled city of Harar Jugol, the fourth holiest city in Islam. Experience fragrant spice markets, traditional Harari houses, world-famous coffee, and the centuries-old night hyena-feeding ritual.',
     highlights: [
@@ -470,12 +472,12 @@ export const TOURS_DATA: TourPackage[] = [
     samplePriceUSD: 3200,
     travelStyle: 'Multi-Day Journeys',
     difficulty: 'Moderate',
-    heroImage: '/src/assets/images/destination_lake_tana_1791564373066.jpg',
+    heroImage: IMAGES.lakeTana,
     gallery: [
-      '/src/assets/images/destination_lake_tana_1791564373066.jpg',
-      '/src/assets/images/hero_ethiopia_lalibela_1791564320721.jpg',
-      '/src/assets/images/tour_simien_mountains_1791564332514.jpg',
-      '/src/assets/images/tour_omo_valley_1791564353175.jpg'
+      IMAGES.lakeTana,
+      IMAGES.lalibela,
+      IMAGES.simien,
+      IMAGES.omo
     ],
     summary: 'The ultimate Ethiopian expedition combining the northern historical treasures (Lalibela, Gondar, Lake Tana) with the diverse cultural heartlands of the South Omo Valley.',
     highlights: [

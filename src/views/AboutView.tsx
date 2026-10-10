@@ -1,5 +1,6 @@
 import React from 'react';
 import { Compass, ShieldCheck, HeartHandshake, MapPin, Phone, Mail, ArrowRight, Award } from 'lucide-react';
+import { IMAGES } from '../utils/imageAssets';
 
 interface AboutViewProps {
   onNavigate: (view: string) => void;
@@ -16,9 +17,10 @@ export const AboutView: React.FC<AboutViewProps> = ({
       {/* Hero Header */}
       <div className="relative min-h-[460px] max-w-7xl mx-auto rounded-3xl overflow-hidden mx-4 sm:mx-6 lg:mx-8 text-white shadow-2xl flex flex-col justify-end p-8 sm:p-14">
         <img
-          src="/src/assets/images/destination_harar_jugol_1791564363559.jpg"
+          src={IMAGES.harar}
           alt="Historic Harar in Ethiopia"
           referrerPolicy="no-referrer"
+          onError={(e) => { e.currentTarget.src = '/images/destination_harar_jugol_1791564363559.jpg'; }}
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#173D32]/95 via-[#173D32]/50 to-black/30" />

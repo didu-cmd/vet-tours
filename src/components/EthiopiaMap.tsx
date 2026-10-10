@@ -4,6 +4,7 @@ import 'leaflet/dist/leaflet.css';
 import { DESTINATIONS_DATA, Destination } from '../data/destinationsData';
 import { TOURS_DATA, formatETB } from '../data/toursData';
 import { MapPin, ArrowRight, Compass, Eye, Layers } from 'lucide-react';
+import { resolveImage, IMAGES } from '../utils/imageAssets';
 
 interface EthiopiaMapProps {
   onSelectDestination: (destId: string) => void;

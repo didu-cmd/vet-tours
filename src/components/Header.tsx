@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, Phone, Compass, CalendarCheck } from 'lucide-react';
+import { IMAGES } from '../utils/imageAssets';
 
 interface HeaderProps {
   currentView: string;
@@ -33,9 +34,10 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Company official logo */}
           <div className="h-12 w-12 rounded-xl overflow-hidden bg-white/90 p-0.5 border border-[#D9A85B]/30 shadow-sm flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
             <img
-              src="https://cdn.corenexis.com/f/EoGd50KcGEa.jpg"
+              src={IMAGES.logoUrl}
               alt="Vacation to Ethiopia Tours Logo"
               referrerPolicy="no-referrer"
+              onError={(e) => { e.currentTarget.src = IMAGES.logoLocal; }}
               className="w-full h-full object-contain"
             />
           </div>

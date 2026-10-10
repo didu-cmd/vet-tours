@@ -18,6 +18,7 @@ import { TOURS_DATA, TourPackage, formatETB } from '../data/toursData';
 import { DESTINATIONS_DATA } from '../data/destinationsData';
 import { JOURNAL_ARTICLES } from '../data/journalData';
 import { EthiopiaMap } from '../components/EthiopiaMap';
+import { IMAGES, resolveImage } from '../utils/imageAssets';
 
 interface HomeViewProps {
   onNavigate: (view: string) => void;
@@ -52,22 +53,22 @@ export const HomeView: React.FC<HomeViewProps> = ({
     {
       title: 'Historical & Cultural Heritage',
       description: 'Explore monolithic 12th-century rock churches in Lalibela, 17th-century imperial Gondar castles, and ancient Axumite stelae.',
-      image: '/src/assets/images/hero_ethiopia_lalibela_1791564320721.jpg'
+      image: IMAGES.lalibela
     },
     {
       title: 'Alpine Trekking & Endemic Wildlife',
       description: 'Traverse the dramatic escarpments of the Simien Mountains to stand beside docile Gelada baboons and rare Walia ibex.',
-      image: '/src/assets/images/tour_simien_mountains_1791564332514.jpg'
+      image: IMAGES.simien
     },
     {
       title: 'Otherworldly Geological Expeditions',
       description: 'Venture below sea level into the Danakil Depression to witness neon sulphur terraces at Dallol and the glowing Erta Ale lava lake.',
-      image: '/src/assets/images/tour_danakil_depression_1791564342740.jpg'
+      image: IMAGES.danakil
     },
     {
       title: 'Living Traditions & Cultural Immersion',
       description: 'Ethical, elder-welcomed encounters with the indigenous pastoral communities of the South Omo Valley and the historic walled alleys of Harar.',
-      image: '/src/assets/images/tour_omo_valley_1791564353175.jpg'
+      image: IMAGES.omo
     }
   ];
 
@@ -79,9 +80,10 @@ export const HomeView: React.FC<HomeViewProps> = ({
         {/* Hero Background Image with measured scrim */}
         <div className="absolute inset-0">
           <img
-            src="/src/assets/images/hero_ethiopia_lalibela_1791564320721.jpg"
+            src={IMAGES.lalibela}
             alt="Church of Saint George in Lalibela, Ethiopia at sunrise"
             referrerPolicy="no-referrer"
+            onError={(e) => { e.currentTarget.src = '/images/hero_ethiopia_lalibela_1791564320721.jpg'; }}
             className="w-full h-full object-cover object-center scale-105 transform motion-safe:animate-fade-in duration-1000"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#173D32]/95 via-[#173D32]/50 to-black/35" />
@@ -633,9 +635,10 @@ export const HomeView: React.FC<HomeViewProps> = ({
       <section className="relative rounded-3xl overflow-hidden max-w-7xl mx-auto text-white mx-4 sm:mx-6 lg:mx-8">
         <div className="relative min-h-[480px] flex items-center justify-center p-8 sm:p-14 text-center">
           <img
-            src="/src/assets/images/destination_lake_tana_1791564373066.jpg"
+            src={IMAGES.lakeTana}
             alt="Lake Tana sunset in Ethiopia"
             referrerPolicy="no-referrer"
+            onError={(e) => { e.currentTarget.src = '/images/destination_lake_tana_1791564373066.jpg'; }}
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-[#173D32]/85 backdrop-blur-[1px]" />

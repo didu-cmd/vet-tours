@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Compass, Phone, Mail, MapPin, CheckCircle, ArrowRight } from 'lucide-react';
 import { DESTINATIONS_DATA } from '../data/destinationsData';
 import { TOURS_DATA } from '../data/toursData';
+import { IMAGES } from '../utils/imageAssets';
 
 interface FooterProps {
   onNavigate: (view: string) => void;
@@ -99,9 +100,10 @@ export const Footer: React.FC<FooterProps> = ({
             <div className="flex items-center gap-3.5">
               <div className="h-12 w-12 rounded-xl overflow-hidden bg-white p-0.5 border border-[#D9A85B]/30 shadow-sm flex items-center justify-center shrink-0">
                 <img
-                  src="https://cdn.corenexis.com/f/EoGd50KcGEa.jpg"
+                  src={IMAGES.logoUrl}
                   alt="Vacation to Ethiopia Tours Logo"
                   referrerPolicy="no-referrer"
+                  onError={(e) => { e.currentTarget.src = IMAGES.logoLocal; }}
                   className="w-full h-full object-contain"
                 />
               </div>
